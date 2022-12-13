@@ -2,7 +2,7 @@
 
 # start cron
 #/usr/sbin/crond -f -l 8
-
+httpd-foreground &
 while :
 do
 	DATE=`date`

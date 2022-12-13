@@ -17,5 +17,4 @@ ADD zap2xml.pl /zap2xml.pl
 ADD entry.sh /entry.sh
 RUN chmod 755 /entry.sh /zap2xml.pl
 
-ENTRYPOINT ["/entry.sh"]
-CMD "httpd-foreground"
+CMD "/entry.sh"
