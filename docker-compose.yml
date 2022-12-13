@@ -1,13 +1,12 @@
 version: '3'
 
 services:
-  sports:
-    image: shuaiscott/zap2xml:latest
+  xmltv:
+    image: zap2xml:latest
     restart: always
-    volumes:
-        - /xmltvdata:/data
+    ports:
+      - "8080:80"
     environment:
         - USERNAME=myemail@email.com
         - PASSWORD=**password**
         - OPT_ARGS=-I -D
-        - XMLTV_FILENAME=sports.xml
