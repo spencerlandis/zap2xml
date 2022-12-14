@@ -6,7 +6,7 @@ This is zap2xml with Environment Variables driving the configuration. By default
 You can access the output via `0.0.0.0:80/xmltv.xml`
 
 ## Quick Run
-`docker run -d --name zap2xml -e USERNAME=youremail@email.com -e PASSWORD=**password** -e OPT_ARGS="-I -D" -e XMLTV_FILENAME=xmltv.xml zap2xml:latest`
+`docker run -d --name zap2xml -p 80:80 -e USERNAME=youremail@email.com -e PASSWORD=**password** -e OPT_ARGS="-I -D" -e XMLTV_FILENAME=xmltv.xml zap2xml:latest`
 
 ## Environment Settings
 You can configure the following environment variables below:
