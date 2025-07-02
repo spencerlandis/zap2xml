@@ -1,4 +1,4 @@
-FROM httpd:alpine
+FROM httpd:alpine3.21
 
 ENV USERNAME=none
 ENV PASSWORD=none
