@@ -19,4 +19,4 @@ WORKDIR /opt
 COPY zap2xml.pl zap2xml.pl
 COPY entry.sh entry.sh
 
-CMD ["/entry.sh"]
+CMD ["./entry.sh"]
