@@ -1,4 +1,4 @@
-FROM httpd:alpine3.21
+FROM httpd:alpine3.13
 
 ENV XMLTV_FILENAME=xmltv.xml
 
